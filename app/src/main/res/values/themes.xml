@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WorkTimer" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="titleColor">#444444</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+
+    <style name="DarkTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="titleColor">#444444</item>
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+
+
+
+</resources>

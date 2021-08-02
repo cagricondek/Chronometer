@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/main_background"
+    >
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar"
+    ></include>
+
+    <ImageView
+        android:id="@+id/circle_clock"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/black" />
+
+
+    <TextView
+        android:id="@+id/timerValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/circle_clock"
+        android:layout_alignTop="@+id/circle_clock"
+        android:layout_alignEnd="@+id/circle_clock"
+        android:layout_alignBottom="@+id/circle_clock"
+        android:text="00:00:000"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="70dp"
+        ></TextView>
+
+    <ToggleButton
+        android:id="@+id/start_time_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/circle_clock"
+        android:layout_alignStart="@+id/circle_clock"
+        android:layout_alignEnd="@+id/circle_clock"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="115dp"
+        android:background="@drawable/start_pause_btn"
+         />
+
+    <Button
+        android:id="@+id/reset_time_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_time_button"
+        android:layout_alignStart="@+id/start_time_button"
+        android:layout_alignEnd="@+id/start_time_button"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="-11dp"
+        android:text="RESET"
+         />
+
+</RelativeLayout>
