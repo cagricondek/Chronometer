@@ -30,24 +30,29 @@ public class MainActivity extends AppCompatActivity {
     private ToggleButton toggleButton;
     private boolean isPlaying=false;
     private Toolbar toolbar;
-
+    /*init time calculate values  */
     private long startTime=0L,timeInMilliseconds=0L,timeSwapBuff=0L,updateTime=0L;
 
 
 
 
 
-
+/*timer handler*/
     Runnable updateTimerThread=new Runnable() {
         @Override
         public void run() {
+            
+            /*calculate time milisecond*/
             timeInMilliseconds=SystemClock.uptimeMillis()-startTime;
             updateTime=timeSwapBuff+timeInMilliseconds;
             int secs=(int)(updateTime/1000);
             int mins=secs/60;
             secs%=60;
             int milliseconds=(int)(updateTime%1000);
+            
+            /*set textview synchronous*/
             timerValue.setText(String.format(""+String.format("%02d", mins)+":"+String.format("%02d", secs)+":"+String.format("%3d",milliseconds)));
+            /*delay for textview*/
             customHandler.postDelayed(this,20);
         }
     };
