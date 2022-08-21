@@ -1,5 +1,5 @@
-# Chronometer
-Chronometer kullanmadan milisecond göstergeli basit bir kronometre uygulaması.
+#                                                                      Chronometer
+                                            Chronometer kullanmadan milisecond göstergeli basit bir kronometre uygulaması.
 
 ![1](https://user-images.githubusercontent.com/49868097/142020463-31756387-33bc-48c4-baeb-718cc9c3c8d2.png)
 ![2](https://user-images.githubusercontent.com/49868097/127911205-55ce37cf-25cf-4d8c-bafd-295332a1ebc6.png)
